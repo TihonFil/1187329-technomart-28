@@ -11,22 +11,24 @@
   <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-img" src="images/logo-technomart.svg" alt="Логотип Техномарт">
-      </a>
-      <form class="page-header__search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="main-search">Поиск</label>
-        <input class="page-header__search" type="search" name="text" id="main-search" placeholder="Поиск">
-      </form>
-      <a class="page-header__bookmark-link" href="#">
-        <img class="page-header__bookmark-img" src="images/icon-bookmark.svg" alt="">
-        Закладки
-      </a>
-      <a class="page-header__cart-link" href="#">
-        <img class="page-header__cart-img" src="images/icon-cart.svg" alt="">
-        Корзина
-      </a>
-      <a class="page-header__order-link" href="#">Оформить заказ</a>
+      <div class="page-header__wrap">
+        <a class="page-header__logo-link" href="index.html">
+          <img class="page-header__logo-img" src="images/logo-technomart.svg" alt="Логотип Техномарт">
+        </a>
+        <form class="page-header__search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="main-search">Поиск</label>
+          <input class="page-header__search" type="search" name="text" id="main-search" placeholder="Поиск">
+        </form>
+        <a class="link page-header__bookmark-link" href="#">
+          <img class="page-header__bookmark-img" src="images/icon-bookmark.svg" alt="">
+          Закладки: 0
+        </a>
+        <a class="link page-header__cart-link" href="#">
+          <img class="page-header__cart-img" src="images/icon-cart.svg" alt="">
+          Корзина: 10
+        </a>
+        <a class="link page-header__order-link" href="#">Оформить заказ</a>
+      </div>
       <p class="page-header__title">
         Интернет&ndash;магазин
         строительных материалов
@@ -40,18 +42,14 @@
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
       <a class="page-header__user-link" href="#">
-        <img class="page-header__user-img" src="images/icon-user.svg" alt="">
         <p class="page-header__user-text">Равшан Джамшутович</p>
       </a>
-      <a class="page-header__login-link" href="index.html">
-        <img class="page-header__login-img" src="images/icon-login.svg" alt="">
-      </a>
-      <ul class="page-header__list">
-        <li class="page-header__item">
-          <a class="page-header__link" href="#">Мои заказы</a>
+      <ul class="page-header__user-list">
+        <li class="page-header__user-item">
+          <a class="page-header__user-link" href="#">Мои заказы</a>
         </li>
-        <li class="page-header__item">
-          <a class="page-header__link" href="#">Личный кабинет</a>
+        <li class="page-header__user-item">
+          <a class="page-header__user-link" href="#">Личный кабинет</a>
         </li>
       </ul>
       <nav class="page-header__navigation">
@@ -175,7 +173,7 @@
               BFG 6000
             </h3>
             <p class="catalog__subtitle">30500 Р.</p>
-            <p class="button catalog__button">25500 Р.</p>
+            <p class="catalog__button">25500 Р.</p>
           </li>
           <li class="catalog__item">
              <a class="catalog-link__active" href="#">Купить</a>
@@ -186,7 +184,7 @@
               BFG 6000
             </h3>
             <p class="catalog__subtitle">30500 Р.</p>
-            <p class="button catalog__button">25500 Р.</p>
+            <p class="catalog__button">25500 Р.</p>
           </li>
           <li class="catalog__item">
              <a class="catalog-link__active" href="#">Купить</a>
@@ -197,7 +195,7 @@
               BFG 6000
             </h3>
             <p class="catalog__subtitle">30500 Р.</p>
-            <p class="button catalog__button">25500 Р.</p>
+            <p class="catalog__button">25500 Р.</p>
           </li>
           <li class="catalog__item">
              <a class="catalog-link__active" href="#">Купить</a>
@@ -208,7 +206,7 @@
               BFG 3000
             </h3>
             <p class="catalog__subtitle">22500 Р.</p>
-            <p class="button catalog__button">15500 Р.</p>
+            <p class="catalog__button">15500 Р.</p>
           </li>
           <li class="catalog__item">
              <a class="catalog-link__active" href="#">Купить</a>
@@ -219,7 +217,7 @@
               BFG 6000
             </h3>
             <p class="catalog__subtitle">30500 Р.</p>
-            <p class="button catalog__button">25500 Р.</p>
+            <p class="catalog__button">25500 Р.</p>
           </li>
           <li class="catalog__item">
              <a class="catalog-link__active" href="#">Купить</a>
@@ -229,7 +227,7 @@
               Перфоратор BOSCH
               BFG 2000
             </h3>
-            <p class="button catalog__button">12500 Р.</p>
+            <p class="catalog__button">12500 Р.</p>
           </li>
           <li class="catalog__item">
              <a class="catalog-link__active" href="#">Купить</a>
@@ -240,7 +238,7 @@
               BFG 3000
             </h3>
             <p class="catalog__subtitle">22500 Р.</p>
-            <p class="button catalog__button">15500 Р.</p>
+            <p class="catalog__button">15500 Р.</p>
           </li>
           <li class="catalog__item">
              <a class="catalog-link__active" href="#">Купить</a>
@@ -251,7 +249,7 @@
               BFG 6000
             </h3>
             <p class="catalog__subtitle">30500 Р.</p>
-            <p class="button catalog__button">25500 Р.</p>
+            <p class="catalog__button">25500 Р.</p>
           </li>
           <li class="catalog__item">
              <a class="catalog-link__active" href="#">Купить</a>
@@ -261,7 +259,7 @@
               Перфоратор BOSCH
               BFG 2000
             </h3>
-            <p class="button catalog__button">12500 Р.</p>
+            <p class="catalog__button">12500 Р.</p>
           </li>
         </ul>
         <ul class="pagination__list">
@@ -321,16 +319,16 @@
             <a class="footer-nav__link" href="#">Контакты</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Материалы</a>
+            <a class="footer-nav__link footer-nav__link--yellow" href="#">Материалы</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Техника</a>
+            <a class="footer-nav__link footer-nav__link--yellow" href="#">Техника</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Инструмент</a>
+            <a class="footer-nav__link footer-nav__link--yellow" href="#">Инструмент</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Спецпредложения</a>
+            <a class="footer-nav__link footer-nav__link--yellow" href="#">Спецпредложения</a>
           </li>
         </ul>
       </div>
@@ -364,7 +362,7 @@
         </div>
         <div class="footer-copyright">
           <p class="footer-copyright__text">
-            Обратная связь:
+            Обратная связь :
             <a class="footer-copyright__link" href="#"> mail@htmlacademy.ru</a>
           </p>
           <p class="footer-copyright__text">

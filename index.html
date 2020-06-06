@@ -11,22 +11,24 @@
   <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-img" src="images/logo-technomart.svg" alt="Логотип Техномарт">
-      </a>
-      <form class="page-header__search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="main-search">Поиск</label>
-        <input class="page-header__search" type="search" name="text" id="main-search" placeholder="Поиск">
-      </form>
-      <a class="page-header__bookmark-link" href="#">
-        <img class="page-header__bookmark-img" src="images/icon-bookmark.svg" alt="">
-        Закладки: 0
-      </a>
-      <a class="page-header__cart-link" href="#">
-        <img class="page-header__cart-img" src="images/icon-cart.svg" alt="">
-        Корзина: 0
-      </a>
-      <a class="page-header__order-link" href="#">Оформить заказ</a>      
+      <div class="page-header__wrap">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-img" src="images/logo-technomart.svg" alt="Логотип Техномарт">
+        </a>
+        <form class="page-header__search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="main-search">Поиск</label>
+          <input class="page-header__search" type="search" name="text" id="main-search" placeholder="Поиск">
+        </form>
+        <a class="link page-header__bookmark-link" href="#">
+          <img class="page-header__bookmark-img" src="images/icon-bookmark.svg" alt="">
+          Закладки: 0
+        </a>
+        <a class="link page-header__cart-link" href="#">
+          <img class="page-header__cart-img" src="images/icon-cart.svg" alt="">
+          Корзина: 0
+        </a>
+        <a class="link page-header__order-link" href="#">Оформить заказ</a>
+      </div>
       <h1 class="page-header__title">
         Интернет&ndash;магазин
         строительных материалов
@@ -39,11 +41,8 @@
       <p class="page-header__text">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
-      <a class="page-header__login-link" href="#">
-        <img class="page-header__login-img" src="images/icon-login.svg" alt="">
-        Войти
-      </a>
-      <a class="page-header__registration-link" href="#">Регистрация</a>
+      <a class="page-header__login-link user-link" href="#">Войти</a>
+      <a class="page-header__registration-link user-link" href="#">Регистрация</a>
       <nav class="page-header__navigation">
         <ul class="page-header__nav-list">
           <li class="page-header__nav-item">
@@ -76,15 +75,15 @@
         <ul class="intro__list">
           <li class="intro__item">
             <h3 class="intro__item-title">Материалы</h3>
-            <a class="button intro__item-link" href="#">на любой вкус</a>
+            <a class="intro__item-link" href="#">на любой вкус</a>
           </li>
           <li class="intro__item">
             <h3 class="intro__item-title">Инструмент</h3>
-            <a class="button intro__item-link" href="#">на все случаи</a>
+            <a class="intro__item-link" href="#">на все случаи</a>
           </li>
           <li class="intro__item">
             <h3 class="intro__item-title">Техника</h3>
-            <a class="button intro__item-link" href="#">для стройки</a>
+            <a class="intro__item-link" href="#">для стройки</a>
           </li>
         </ul>
         <div class="intro__slider">
@@ -97,7 +96,7 @@
               <img class="intro-slider__img" src="images/hummer-drill.jpg" width="620" height="266" alt="Перфоратор">
               <button class="intro-slider__button" type="button">Назад</button>
               <button class="intro-slider__button" type="button">Вперед</button>
-              <a class="intro-slider__link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              <a class="button intro-slider__link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </li>
             <li class="intro-slider__item">
               <h2 class="intro-slider__title">Дрели</h2>
@@ -107,25 +106,27 @@
               <img class="intro-slider__img" src="images/drill.jpg" width="620" height="266" alt="Дрель">
               <button class="intro-slider__button" type="button">Назад</button>
               <button class="intro-slider__button" type="button">Вперед</button>
-              <a class="intro-slider__link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              <a class="button intro-slider__link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </li>
           </ul>
         </div>
         <ul class="intro__list">
           <li class="intro__item">
             <h3 class="intro__item-title">Скидки 50%</h3>
-            <a class="button intro__item-link" href="#">на 350 товаров</a>
+            <a class="intro__item-link" href="#">на 350 товаров</a>
           </li>
           <li class="intro__item">
             <h3 class="intro__item-title">Доставка</h3>
-            <a class="button intro__item-link" href="#">бесплатно</a>
+            <a class="intro__item-link" href="#">бесплатно</a>
           </li>
         </ul>
       </section>
 
       <section class="product">
-        <h2 class="product__title">Популярные товары:</h2>
-        <a class="button product__link" href="catalog.html">все популярные товары</a>
+        <div class="product-title__wrap">
+          <h2 class="product__title">Популярные товары:</h2>
+          <a class="button product-title__link" href="catalog.html">все популярные товары</a>
+        </div>
         <ul class="product__list">
           <li class="product__item">
              <a href="#">Купить</a>
@@ -135,7 +136,7 @@
               Перфоратор BOSCH  BFG 9000
             </h3>
             <p class="product__item-subtitle">32500 Р.</p>
-            <p class="button product__item-text">25500 Р.</p>
+            <p class="product__item-text">25500 Р.</p>
           </li>
           <li class="product__item">
              <a href="#">Купить</a>
@@ -145,7 +146,7 @@
               Перфоратор BOSCH  BFG 3000
             </h3>
             <p class="product__item-subtitle">22500 Р.</p>
-            <p class="button product__item-text">15500 Р.</p>
+            <p class="product__item-text">15500 Р.</p>
           </li>
           <li class="product__item">
              <a href="#">Купить</a>
@@ -155,7 +156,7 @@
               Перфоратор BOSCH  BFG 6000
             </h3>
             <p class="product__item-subtitle">30500 Р.</p>
-            <p class="button product__item-text">25500 Р.</p>
+            <p class="product__item-text">25500 Р.</p>
           </li>
           <li class="product__item">
              <a href="#">Купить</a>
@@ -164,14 +165,16 @@
             <h3 class="product__item-title">
               Перфоратор BOSCH  BFG 2000
             </h3>
-            <p class="button product__item-text">12500 Р.</p>
+            <p class="product__item-text">12500 Р.</p>
           </li>
         </ul>
       </section>
 
       <section class="manufacturer">
-        <h2 class="manufacturer__title">Популярные производители:</h2>
-        <a class="manufacturer__button button" href="">все производители</a>
+        <div class="manufacturer-title__wrap">
+          <h2 class="manufacturer__title">Популярные производители:</h2>
+          <a class="button manufacturer-title__link" href="">все производители</a>
+        </div>
         <ul class="manufacturer__list">
           <li class="manufacturer__item">
             <a class="manufacturer__link" href="#">
@@ -224,7 +227,7 @@
         </p>
         <ul class="service__list">
           <li class="service__item">
-            <h3 class="service__title-item">Доставка</h3>
+            <h3 class="service__title-item service__title-item--active">Доставка</h3>
           </li>
           <li class="service__item">
             <h3 class="service__title-item">Гарантия</h3>
@@ -321,16 +324,16 @@
             <a class="footer-nav__link" href="#">Контакты</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Материалы</a>
+            <a class="footer-nav__link footer-nav__link--yellow" href="#">Материалы</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Техника</a>
+            <a class="footer-nav__link footer-nav__link--yellow" href="#">Техника</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Инструмент</a>
+            <a class="footer-nav__link footer-nav__link--yellow" href="#">Инструмент</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Спецпредложения</a>
+            <a class="footer-nav__link footer-nav__link--yellow" href="#">Спецпредложения</a>
           </li>
         </ul>
       </div>
@@ -364,7 +367,7 @@
         </div>
         <div class="footer-copyright">
           <p class="footer-copyright__text">
-            Обратная связь:
+            Обратная связь :
             <a class="footer-copyright__link" href="#"> mail@htmlacademy.ru</a>
           </p>
           <p class="footer-copyright__text">
