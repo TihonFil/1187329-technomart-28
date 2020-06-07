@@ -6,6 +6,7 @@
   --basic-red: #EE3643;
   --basic-green: #63A63E;
   --basic-grey: #3D546F;
+  --basic-greyborder: #E5E5E5;
   --basic-greylight: #C5C5C5;
   --basic-background: #F1F5F7;
   --wight: #ffffff;
@@ -23,6 +24,8 @@
   --title-grey: #F9F5F0;
   --grey: #F3F7F9;
   --yellow: #FFDA96;
+  --background: #F2F6F8;
+  --filter: #F7F3EC;
 }
 
     /* Global */
@@ -458,4 +461,209 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--yellow);
+}
+
+    /* page-catalog */
+
+.page-catalog {
+  background-color: var(--wight);
+}
+
+.page-catalog__list {
+  list-style: none;
+}
+
+.page-catalog__item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.page-catalog__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black-grey);
+  background-color: var(--background);
+}
+
+    /* filters */
+
+.filters {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.filters__title {
+  font-size:13px;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+  background-color: var(--filter);
+}
+
+.filte-slider__title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.filter-checkbox__title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.filter-checkbox__label {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.filter-radio__label {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.filter-form__button {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: var(--wight);
+  border: 1px solid var(--basic-greyborder);
+  padding: 10px 80px;
+}
+
+.filter-nav__wrap {
+  background-color: var(--filter);
+}
+
+.filter-nav__list {
+  list-style: none;
+}
+
+.filter-nav__link {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.filter-nav__link--active {
+  color: var(--basic-red);
+  opacity: 1;
+}
+
+.filter-nav__link:hover {
+  color: var(--black);
+  opacity: 1;
+}
+
+.filter-nav__link:focus {
+  color: var(--basic-red);
+  opacity: 1;
+}
+
+    /* catalog */
+
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.catalog__subtitle {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  color: var(--decor-grey);
+}
+
+.catalog__button {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--wight);
+  background-color: var(--basic-red);
+}
+
+.pagination__list {
+  list-style: none;
+}
+
+.pagination__item {
+  display: inline-block;
+  border: 1px solid var(--basic-greyborder);
+  border-radius: 2px;
+  padding: 7px 15px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: var(--wight);
+}
+
+.pagination__item:hover {
+  border: 1px solid var(--basic-greylight);
+}
+
+.pagination__item:active {
+  border: 1px solid var(--basic-red);
+}
+
+.pagination__item--active {
+  background-color: var(--basic-red);
+  border: 1px solid var(--basic-red);
+}
+
+.pagination__link {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.pagination__link--active {
+  color: var(--wight);
+}
+
+.pagination__item--next {
+  padding: 7px 32px;
+}
+
+    /* catalog-footer */
+
+.catalog-footer {
+  background-color: var(--basic-background);
+}
+
+.catalog-footer__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.catalog-footer__text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--black);
 }

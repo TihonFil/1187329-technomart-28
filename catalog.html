@@ -106,23 +106,23 @@
             <ul class="filter-checkbox__list">
               <li class="filter-checkbox__item">
                 <input class="filter-checkbox__input" type="checkbox" name="bosch" id="filter-bosch" checked>
-                <label for="filter-bosch">Bosch</label>
+                <label class="filter-checkbox__label" for="filter-bosch">Bosch</label>
               </li>
               <li class="filter-checkbox__item">
                 <input class="filter-checkbox__input" type="checkbox" name="interscol" id="filter-interscol">
-                <label for="filter-interscol">интерскол</label>
+                <label class="filter-checkbox__label" for="filter-interscol">интерскол</label>
               </li>
               <li class="filter-checkbox__item">
                 <input class="filter-checkbox__input" type="checkbox" name="makita" id="filter-makita" checked>
-                <label for="filter-makita">makita</label>
+                <label class="filter-checkbox__label" for="filter-makita">makita</label>
               </li>
               <li class="filter-checkbox__item">
                 <input class="filter-checkbox__input" type="checkbox" name="dewalt" id="filter-dewalt">
-                <label for="filter-dewalt">dewalt</label>
+                <label class="filter-checkbox__label" for="filter-dewalt">dewalt</label>
               </li>
               <li class="filter-checkbox__item">
                 <input class="filter-checkbox__input" type="checkbox" name="hitachi" id="filter-hitachi">
-                <label for="filter-hitachi">hitachi</label>
+                <label class="filter-checkbox__label" for="filter-hitachi">hitachi</label>
               </li>
             </ul>
           </fieldset>
@@ -131,35 +131,36 @@
             <ul class="filter-radio__list">
               <li class="filter-radio__item">
                 <input class="filter-radio__input" type="radio" name="power-supply" value="battery" id="filter-battery" checked>
-                <label for="filter-battery">Аккумуляторные</label>
+                <label class="filter-radio__label" for="filter-battery">Аккумуляторные</label>
               </li>
               <li class="filter-radio__item">
                 <input class="filter-radio__input" type="radio" name="power-supply" value="network" id="filter-network">
-                <label for="filter-network">Сетевые</label>
+                <label class="filter-radio__label" for="filter-network">Сетевые</label>
               </li>
             </ul>
           </fieldset>
-          <button class="filter-form__button button" type="submit">Показать</button>
+          <button class="filter-form__button" type="submit">Показать</button>
         </form>
-
-        <h2 class="filters__title">Сортировка:</h2>
-        <ul class="filter-nav__list">
-          <li class="filter-nav__item">
-            <a class="filter-nav__link" href="#">по цене</a>
-          </li>
-          <li class="filter-nav__item">
-            <a class="filter-nav__link" href="#">по типу</a>
-          </li>
-          <li class="filter-nav__item">
-            <a class="filter-nav__link" href="#">по функционалу</a>
-          </li>
-          <li class="filter-nav__item">
-            <a class="filter-nav__link" href="#">вверх</a>
-          </li>
-          <li class="filter-nav__item">
-            <a class="filter-nav__link" href="#">вниз</a>
-          </li>
-        </ul>
+        <div class="filter-nav__wrap">
+          <h2 class="filters__title">Сортировка:</h2>
+          <ul class="filter-nav__list">
+            <li class="filter-nav__item">
+              <a class="filter-nav__link filter-nav__link--active" href="#">по цене</a>
+            </li>
+            <li class="filter-nav__item">
+              <a class="filter-nav__link" href="#">по типу</a>
+            </li>
+            <li class="filter-nav__item">
+              <a class="filter-nav__link" href="#">по функционалу</a>
+            </li>
+            <li class="filter-nav__item">
+              <a class="filter-nav__link" href="#">вверх</a>
+            </li>
+            <li class="filter-nav__item">
+              <a class="filter-nav__link" href="#">вниз</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="catalog">
@@ -263,8 +264,8 @@
           </li>
         </ul>
         <ul class="pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">1</a>
+          <li class="pagination__item pagination__item--active">
+            <a class="pagination__link pagination__link--active" href="#">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">2</a>
@@ -272,7 +273,7 @@
           <li class="pagination__item">
             <a class="pagination__link" href="#">3</a>
           </li>
-          <li class="pagination__item">
+          <li class="pagination__item pagination__item--next">
             <a class="pagination__link" href="#">Следующая</a>
           </li>
         </ul>
