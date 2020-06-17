@@ -11,12 +11,12 @@
   --basic-background: #F1F5F7;
   --wight: #ffffff;
   --special-yellow: #FFBF47;
+  --special-yellowblack: #FFC047;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
   --special-greenlight: #8ED78F;
   --special-yellowlight: #FFD180;
   --success: #5FBB2D;
-  --warning: #FFBF47;
   --error: #BA2732;
   --greylight: #EAEAEA;
   --black: #000000;
@@ -59,8 +59,21 @@ img {
   height: auto;
 }
 
+ul {
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
 .container {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -224,7 +237,7 @@ img {
   color: var(--basic-greylight);
 }
 
-.page-header__navigation {
+.page-header__wrap-navigation {
   background-color: var(--black-grey);
   box-shadow: inset 0px -5px 0px #293449;
   height: 60px;
@@ -281,18 +294,41 @@ img {
 
 .intro__list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .intro__item {
-  background-color: var(--warning);
+  width: 300px;
+  height: 123px;
+  padding: 20px 22px;
 }
 
-.intro__item:nth-child(2) {
+.intro__item--special-yellow {
+  background-color: var(--special-yellow);
+  background-image: url(../images/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: 205px 55px;
+}
+
+.intro__item--special-blue {
   background-color: var(--special-blue);
 }
 
-.intro__item:nth-child(3) {
+.intro__item--special-lilac {
   background-color: var(--special-lilac);
+}
+
+.intro__item--special-greenlight {
+  background-color: var(--special-greenlight);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.intro__item--special-yellowblack {
+  background-color: var(--special-yellowblack);
+  margin-left: 20px;
 }
 
 .intro__item-title {
@@ -319,18 +355,29 @@ img {
   background-color: rgba(169, 169, 169, 0.3);
 }
 
+.intro-slider__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .intro-slider__list {
   list-style: none;
 }
 
 .intro-slider__item {
   position: relative;
+  width: 620px;
+  height: 266px;
+}
+
+.intro-slider__item--active {
+  display: none;
 }
 
 .intro-slider__title {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 24px;
+  top: 23px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -340,14 +387,17 @@ img {
 
 .intro-slider__text {
   position: absolute;
-  left: 0;
-  top: 45px;
+  left: 24px;
+  top: 65px;
   font-size: 18px;
   line-height: 24px;
   color: var(--wight);
 }
 
 .intro-slider__link {
+  position: absolute;
+  left: 24px;
+  bottom: 27px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
