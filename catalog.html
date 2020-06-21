@@ -31,87 +31,106 @@
           <a class="link page-header__order-link" href="#">Оформить заказ</a>
         </div>
       </div>
-      <div class="container">
+      <div class="page-header__wrap-inner container">
         <p class="page-header__title">
           Интернет&ndash;магазин
           строительных материалов
           и инструментов для ремонта
         </p>
-        <a class="page-header__tel-link" href="tel:+78125550555">
-          <img class="page-header__tel-img" src="images/icon-phone.svg" alt="">
-          +7 (812) 555-05-55
-        </a>
-        <p class="page-header__text">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
-        <a class="page-header__user-link" href="#">
-          <p class="page-header__user-text">Равшан Джамшутович</p>
-        </a>
-        <ul class="page-header__user-list">
-          <li class="page-header__user-item">
-            <a class="page-header__user-link" href="#">Мои заказы</a>
-          </li>
-          <li class="page-header__user-item">
-            <a class="page-header__user-link" href="#">Личный кабинет</a>
-          </li>
-        </ul>
+        <div class="page-header__wrap-communication">
+          <a class="page-header__tel-link" href="tel:+78125550555">
+            <img class="page-header__tel-img" src="images/icon-phone.svg" alt="">
+            +7 (812) 555-05-55
+          </a>
+          <p class="page-header__text">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+        </div>
+        <div class="page-header__wrap-login">
+          <a class="page-header__user-link" href="#">
+            <p class="page-header__user-text">Равшан Джамшутович</p>
+          </a>
+          <ul class="page-header__user-list">
+            <li class="page-header__user-item">
+              <a class="page-header__user-link" href="#">Мои заказы</a>
+            </li>
+            <li class="page-header__user-item">
+              <a class="page-header__user-link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <nav class="page-header__navigation container">
-        <ul class="page-header__nav-list">
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">Компания</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">Каталог</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">Новости</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">Спецпредложения</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">Доставка</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
+        <div class="page-header__wrap-navigation">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="#">Компания</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="#">Каталог</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="#">Новости</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="#">Спецпредложения</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="#">Доставка</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main class="page-catalog">
-      <ul class="page-catalog__list">
-        <li class="page-catalog__item">
-          <a class="page-catalog__link" href="index.html">На главную</a>
-        </li>
-        <li class="page-catalog__item">
-          <a class="page-catalog__link" href="index.html">Каталог</a>
-        </li>
-        <li class="page-catalog__item">
-          <a class="page-catalog__link" href="index.html">Инструмент</a>
-        </li>
-        <li class="page-catalog__item">
-          <a class="page-catalog__link" href="index.html">Перфораторы</a>
-        </li>
-      </ul>
-      <h1 class="page-catalog__title">Перфораторы</h1>
+      <div class="container">
+        <ul class="page-catalog__list">
+          <li class="page-catalog__item page-catalog__item--img">
+            <a class="page-catalog__link" href="index.html"><span class="visually-hidden">На
+                главную</span></a>
+          </li>
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">Каталог</a>
+          </li>
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">Инструмент</a>
+          </li>
+          <li class="page-catalog__item">
+            <a class="page-catalog__link" href="#">Перфораторы</a>
+          </li>
+        </ul>
+        <h1 class="page-catalog__title">Перфораторы</h1>
+      </div>
 
-      <section class="filters">
+      <section class="filters container">
         <h2 class="filters__title">Фильтр:</h2>
         <form class="filter-form" action="http://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-slider">
             <legend class="filte-slider__title">Цена:</legend>
-            <div class="">
-              <div class=""></div>
-              <div class=""></div>
-              <div class=""></div>
+            <div class="filter-slider__range">
+              <div class="filter-slider__range-controls">
+                <div class="filter-slider__scale">
+                  <div class="filter-slider__bar"></div>
+                </div>
+                <div class="filter-slider__toggle toggle-min" tabindex="0"></div>
+                <div class="filter-slider__toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="filter-slider__price-controls">
+                <label for="" class="price-label min-price">
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label for="" class="price-label max-price">
+                  <input type="number" name="max-price" value="30000">
+                </label>
+              </div>
             </div>
-              <input class="filter-slider__input" type="number" name="number" id="sorting-start" placeholder="0">
-              <input class="filte-slider__input" type="number" name="number" id="sorting-end" placeholder="30000">
           </fieldset>
           <fieldset class="filter-checkbox">
             <legend class="filter-checkbox__title">производители:</legend>
