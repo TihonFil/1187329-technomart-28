@@ -234,57 +234,61 @@
       </section>
 
       <section class="service">
-        <div class="container">
-          <h2 class="service__title">Сервисы</h2>
-          <p class="service__subtitle">
-            Хороший интернет-магазин отличается от плохого не только ценами!
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-          </p>
-          <ul class="service__list">
-            <li class="service__item">
-              <h3 class="service__title-item">
-                <button class="service__title-button service__title-button--active" type="button">Доставка</button>
-              </h3>
-            </li>
-            <li class="service__item">
-              <h3 class="service__title-item">
-                <button class="service__title-button" type="button">Гарантия</button>
-              </h3>
-            </li>
-            <li class="service__item">
-              <h3 class="service__title-item">
-                <button class="service__title-button" type="button">Кредит</button>
-              </h3>
-            </li>
-          </ul>
-          <ul class="service-item__list">
-            <li class="service-item__item">
-              <span class="service-item__title">Доставка</span>
-              <p class="service-item__text">
-                Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
-                поднимая его на ваш этаж!
-              </p>
-            </li>
-            <li class="service-item__item">
-              <span class="service-item__title">гарантия</span>
-              <p class="service-item__text">
-                Если купленный у нас товар поломается или заискрит,
-                а также в случае пожара, спровоцированного его
-                возгоранием, вы всегда можете быть уверены в нашей гарантии.
-                Мы обменяем сгоревший товар на новый. Дом уж
-                восстановите как-нибудь сами.
-              </p>
-            </li>
-            <li class="service-item__item">
-              <span class="service-item__title">Кредит</span>
-              <p class="service-item__text">
-                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-              </p>
-              <a class="service-item__button button" href="#">Отправить заявку</a>
-            </li>
-          </ul>
+        <div class="service__container container">
+          <div class="service__wrap">
+            <h2 class="service__title">Сервисы</h2>
+            <p class="service__subtitle">
+              Хороший интернет-магазин отличается от плохого не только ценами!
+              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+            </p>
+            <ul class="service__list">
+              <li class="service__item">
+                <h3 class="service__title-item">
+                  <button class="service__title-button service__title-button--active" type="button">Доставка</button>
+                </h3>
+              </li>
+              <li class="service__item">
+                <h3 class="service__title-item">
+                  <button class="service__title-button" type="button">Гарантия</button>
+                </h3>
+              </li>
+              <li class="service__item">
+                <h3 class="service__title-item">
+                  <button class="service__title-button" type="button">Кредит</button>
+                </h3>
+              </li>
+            </ul>
+          </div>
+          <div class="service__wrap">
+            <ul class="service-item__list">
+              <li class="service-item__item">
+                <span class="service-item__title">Доставка</span>
+                <p class="service-item__text">
+                  Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем,
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li class="service-item__item">
+                <span class="service-item__title">гарантия</span>
+                <p class="service-item__text">
+                  Если купленный у нас товар поломается или заискрит,
+                  а также в случае пожара, спровоцированного его
+                  возгоранием, вы всегда можете быть уверены в нашей гарантии.
+                  Мы обменяем сгоревший товар на новый. Дом уж
+                  восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="service-item__item">
+                <span class="service-item__title">Кредит</span>
+                <p class="service-item__text">
+                  Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="service-item__button button" href="#">Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -419,23 +423,25 @@
     <!-- popup-write -->
     <div class=" modal popup-write">
       <form class="popup-write__form" action="http://echo.htmlacademy.ru" method="post">
-        <div class="popup-write__wrap">
+        <div class="popup-write__form-wrap">
+          <div class="popup-write__wrap">
+            <p class="popup-write__text">
+              <label class="popup-write__label" for="popup-name">Ваше имя:</label>
+              <input class="popup-write__input" type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
+            </p>
+            <p class="popup-write__text">
+              <label class="popup-write__label" for="popup-email">Ваш e-mail:</label>
+              <input class="popup-write__input" type="email" name="email" id="popup-email" placeholder="email@example.com">
+            </p>
+          </div> 
           <p class="popup-write__text">
-            <label class="popup-write__label" for="popup-name">Ваше имя:</label>
-            <input class="popup-write__input" type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
+            <label class="popup-write__label popup-write__label--textarea" for="popup-text">Текст письма:</label>
+            <textarea class="popup-write__textarea" name="text" id="popup-text" cols="40" rows="5"
+              placeholder="В свободной форме"></textarea>
           </p>
-          <p class="popup-write__text">
-            <label class="popup-write__label" for="popup-email">Ваш e-mail:</label>
-            <input class="popup-write__input" type="email" name="email" id="popup-email" placeholder="email@example.com">
-          </p>
-        </div> 
-        <p class="popup-write__text">
-          <label class="popup-write__label" for="popup-text">Текст письма:</label>
-          <textarea class="popup-write__textarea" name="text" id="popup-text" cols="40" rows="8"
-            placeholder="В свободной форме"></textarea>
-        </p>
+        </div>
         <div class="popup-write__button-wrap">
-          <button class="popup-write__button" type="submit">Оформить заказ</button>
+          <button class="popup-write__button" type="submit">Отправить</button>
         </div>
       </form>
       <button class="popup-button__close" type="button" aria-label="Закрыть"></button>
