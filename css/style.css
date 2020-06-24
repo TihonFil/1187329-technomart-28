@@ -201,7 +201,8 @@ p {
 }
 
 .page-header__wrap-communication {
-  margin-top: 46px;
+  padding: 41px 0;
+  text-align: center;
 }
 
 .page-header__tel-link {
@@ -223,12 +224,23 @@ p {
   font-size: 14px;
   line-height: 24px;
   color: var(--black-grey);
+  padding-top: 10px;
 }
 
 .user-link {
   font-size: 21px;
   line-height: 21px;
   color: var(--black);
+  background-color: var(--wight);
+  padding: 12px 24px;
+}
+
+.page-header__login-link {
+  background-image: url(../images/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 18px 15px;
+  padding: 12px 24px 12px 45px;
+  margin-right: 10px;
 }
 
 .user-link:hover {
@@ -692,6 +704,8 @@ p {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 9px 40px;
+  border-radius: 3px;
 }
 
     /* feature */
@@ -1366,7 +1380,7 @@ p {
 .popup-button__close {
   position: absolute;
   top: 14px;
-  right: 11px;
+  right: 15px;
   width: 22px;
   height: 22px;
   background-color: transparent;
