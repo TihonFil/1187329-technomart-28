@@ -699,6 +699,7 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 70px 0;
 }
 
 .feature {
@@ -717,22 +718,31 @@ p {
   font-size: 13px;
   line-height: 24px;
   color: var(--black);
+  padding-top: 24px;
 }
 
 .feature__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .feature__item {
   font-size: 18px;
   line-height: 24px;
   color: var(--black);
+  padding-bottom: 12px;
+}
+
+.feature__item:last-child {
+  padding-bottom: 20px;
 }
 
 .feature__button {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 11px 40px 9px 40px;
 }
 
 .contact__title {
@@ -740,6 +750,7 @@ p {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--black);
+  padding-bottom: 24px;
 }
 
 .contact__text {
@@ -747,12 +758,21 @@ p {
   font-size: 13px;
   line-height: 24px;
   color: var(--black);
+  padding-bottom: 32px;
 }
 
 .contact__button {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  text-align: center;
+}
+
+.contact__wrap {
+  display: flex;
+  flex-direction: column;
 }
 
     /* footer */
