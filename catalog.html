@@ -151,24 +151,44 @@
               <legend class="filter-checkbox__title">производители:</legend>
               <ul class="filter-checkbox__list">
                 <li class="filter-checkbox__item">
-                  <input class="filter-checkbox__input" type="checkbox" name="bosch" id="filter-bosch" checked>
-                  <label class="filter-checkbox__label" for="filter-bosch">Bosch</label>
+                  <label class="filter-checkbox__label" for="filter-bosch">
+                    <input class=" visually-hidden filter-checkbox__input" type="checkbox" name="bosch"
+                      id="filter-bosch" checked>
+                      <span class="filter-checkbox__box"></span>
+                      Bosch
+                  </label>
+                </li>
+                <li class="filter-checkbox__item">    
+                  <label class="filter-checkbox__label" for="filter-interscol">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="interscol"
+                      id="filter-interscol">
+                      <span class="filter-checkbox__box"></span>
+                      интерскол
+                  </label>
                 </li>
                 <li class="filter-checkbox__item">
-                  <input class="filter-checkbox__input" type="checkbox" name="interscol" id="filter-interscol">
-                  <label class="filter-checkbox__label" for="filter-interscol">интерскол</label>
+                  <label class="filter-checkbox__label" for="filter-makita">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="makita"
+                      id="filter-makita" checked>
+                      <span class="filter-checkbox__box"></span>
+                      makita
+                  </label>
                 </li>
                 <li class="filter-checkbox__item">
-                  <input class="filter-checkbox__input" type="checkbox" name="makita" id="filter-makita" checked>
-                  <label class="filter-checkbox__label" for="filter-makita">makita</label>
+                  <label class="filter-checkbox__label" for="filter-dewalt">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="dewalt"
+                      id="filter-dewalt">
+                      <span class="filter-checkbox__box"></span>
+                      dewalt
+                  </label>
                 </li>
                 <li class="filter-checkbox__item">
-                  <input class="filter-checkbox__input" type="checkbox" name="dewalt" id="filter-dewalt">
-                  <label class="filter-checkbox__label" for="filter-dewalt">dewalt</label>
-                </li>
-                <li class="filter-checkbox__item">
-                  <input class="filter-checkbox__input" type="checkbox" name="hitachi" id="filter-hitachi">
-                  <label class="filter-checkbox__label" for="filter-hitachi">hitachi</label>
+                  <label class="filter-checkbox__label" for="filter-hitachi">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="hitachi"
+                      id="filter-hitachi">
+                      <span class="filter-checkbox__box"></span>
+                      hitachi
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -176,12 +196,20 @@
               <legend class="filter-radio__title">Питание:</legend>
               <ul class="filter-radio__list">
                 <li class="filter-radio__item">
-                  <input class="filter-radio__input" type="radio" name="power-supply" value="battery" id="filter-battery" checked>
-                  <label class="filter-radio__label" for="filter-battery">Аккумуляторные</label>
+                  <label class="filter-radio__label" for="filter-battery">
+                    <input class="visually-hidden filter-radio__input" type="radio" name="power-supply" value="battery"
+                      id="filter-battery" checked>
+                      <span class="filter-radio__box"></span>
+                      Аккумуляторные
+                  </label>
                 </li>
-                <li class="filter-radio__item">
-                  <input class="filter-radio__input" type="radio" name="power-supply" value="network" id="filter-network">
-                  <label class="filter-radio__label" for="filter-network">Сетевые</label>
+                <li class="filter-radio__item"> 
+                  <label class="filter-radio__label" for="filter-network">
+                    <input class="visually-hidden filter-radio__input" type="radio" name="power-supply" value="network"
+                      id="filter-network">
+                      <span class="filter-radio__box"></span>
+                      Сетевые
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -194,7 +222,7 @@
             <h2 class="catalog-nav__title">Сортировка:</h2>
             <ul class="catalog-nav__list">
               <li class="catalog-nav__item">
-                <a class="catalog-nav__link" href="#">по цене</a>
+                <a class="catalog-nav__link catalog-nav__link--active" href="#">по цене</a>
               </li>
               <li class="catalog-nav__item">
                 <a class="catalog-nav__link" href="#">по типу</a>
@@ -203,7 +231,8 @@
                 <a class="catalog-nav__link" href="#">по функционалу</a>
               </li>
               <li class="catalog-nav__item">
-                <a class="catalog-nav__link" href="#"><span class="visually-hidden">вверх</span>
+                <a class="catalog-nav__link catalog-nav__link--up catalog-nav__link--active" href="#"><span
+                    class="visually-hidden">вверх</span>
                   <svg class="catalog-nav__img--up" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
                     viewBox="0 0 11 10">
                     <path d="M5.5 0L0 10h11z"/>
@@ -211,7 +240,7 @@
                 </a>
               </li>
               <li class="catalog-nav__item">
-                <a class="catalog-nav__link" href="#"><span class="visually-hidden">вниз</span>
+                <a class="catalog-nav__link catalog-nav__link--down" href="#"><span class="visually-hidden">вниз</span>
                   <svg class="catalog-nav__img--down" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
                     viewBox="0 0 11 10">
                     <path d="M5.5 10L0 0h11"/>
