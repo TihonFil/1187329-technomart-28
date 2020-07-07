@@ -116,6 +116,8 @@
                 <button class="intro-slider__button intro-slider__button--back" type="button" aria-label="Назад"></button>
                 <button class="intro-slider__button intro-slider__button--forward" type="button" aria-label="Вперед"></button>
                 <a class="button intro-slider__link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                <span class="intro-slider__button-point intro-slider__button-point--one"></span>
+                <span class="intro-slider__button-point intro-slider__button-point--two intro-slider__button-point--active"></span>
               </li>
               <li class="intro-slider__item">
                 <h2 class="intro-slider__title">Дрели</h2>
@@ -126,6 +128,8 @@
                 <button class="intro-slider__button intro-slider__button--back" type="button" aria-label="Назад"></button>
                 <button class="intro-slider__button intro-slider__button--forward" type="button" aria-label="Вперед"></button>
                 <a class="button intro-slider__link" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                <span class="intro-slider__button-point intro-slider__button-point--one intro-slider__button-point--active"></span>
+                <span class="intro-slider__button-point intro-slider__button-point--two"></span>
               </li>
             </ul>
           </div>
@@ -358,7 +362,8 @@
             заехав в наш офис:
           </p>
           <div class="contact__wrap">
-            <a class="contact__link" href="#">
+            <a class="contact__link" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8
+              /Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&z=17.09">
               <img class="contact__img" src="images/map.png" alt="Карта Большая Конюшенная улица, дом 19">
             </a>  
             <a class="contact__button button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
@@ -490,9 +495,12 @@
     <!-- popup-map -->
     <div class="modal popup-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <a class="popup-map__link">
-        <img class="popup-map__img" src="images/popup-map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="943" height="449">
-      </a>
+      <div class="popup-map__wrap">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a6678a3ac5f0a675617ebabe67bace8827291a777e4215e1c46debcd963df5c&amp;source=constructor"
+          width="943" height="449" frameborder="0">
+        </iframe>
+      </div>
       <button class="popup-button__close map-close" type="button" aria-label="Закрыть"></button>
     </div>
     <!-- popup-order -->
