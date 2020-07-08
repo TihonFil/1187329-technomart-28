@@ -27,7 +27,7 @@
           </form>
           <div class="page-header__wrap-carts">
             <a class="link page-header__bookmark-link" href="#">Закладки: 0</a>
-            <a class="link page-header__cart-link page-header__cart-link--red" href="#">Корзина: 10</a>
+            <a class="link page-header__cart-link page-header__carts-link--red" href="#">Корзина: 10</a>
             <a class="link page-header__order-link" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -35,12 +35,11 @@
       <div class="page-header__wrap-inner container">
         <p class="page-header__title">
           Интернет&ndash;магазин
-          строительных материалов
+          строительных материалов<br>
           и инструментов для ремонта
         </p>
         <div class="page-header__wrap-communication">
           <a class="page-header__tel-link" href="tel:+78125550555">
-            <img class="page-header__tel-img" src="images/icon-phone.svg" alt="">
             +7 (812) 555-05-55
           </a>
           <p class="page-header__text">
@@ -142,11 +141,11 @@
                   <div class="filter-slider__toggle toggle-max" tabindex="0"></div>
                 </div>
                 <div class="filter-slider__price-controls">
-                  <label for="" class="price-label min-price">
-                    <input type="number" name="min-price" value="0">
+                  <label for="min-price" class="price-label min-price">
+                    <input id="min-price" type="number" name="min-price" value="0">
                   </label>
-                  <label for="" class="price-label max-price">
-                    <input type="number" name="max-price" value="30000">
+                  <label for="max-price" class="price-label max-price">
+                    <input id="max-price" type="number" name="max-price" value="30000">
                   </label>
                 </div>
               </div>
@@ -428,14 +427,20 @@
           <h2 class="catalog-footer__title">
             ПАРА СЛОВ О ПЕРФОРАТОРАХ
           </h2>
-          <p class="catalog-footer__text">
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-            бетоне и камне.</br>
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-            шуруповерта и отбойного молотка.</br>
-            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
-            дрель.
-          </p>
+          <div class="catalog-footer__wrap-text">
+            <p class="catalog-footer__text">
+              Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+              бетоне и камне.
+            </p>
+            <p class="catalog-footer__text">
+              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+              шуруповерта и отбойного молотка.
+            </p>
+            <p class="catalog-footer__text">
+              В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
+              дрель.
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -508,8 +513,8 @@
                   <span class="visually-hidden">Фейсбук</span>
                   <img class="footer-social__img" src="images/icon-fb.svg" alt="Фейсбук">
                 </a>
-              </li class="footer-social__item">
-              <li>
+              </li>
+              <li class="footer-social__item">
                 <a class="footer-social__button" href="#">
                   <span class="visually-hidden">Инстаграмм</span>
                   <img class="footer-social__img" src="images/icon-insta.svg" alt="Инстаграмм">
@@ -528,7 +533,7 @@
               <p class="footer-copyright__text">
                 Разработано -
               </p>
-              <a class="footer-copyright__link" href="#">htmlacademy.ru</a>
+              <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </div>
         </div>
