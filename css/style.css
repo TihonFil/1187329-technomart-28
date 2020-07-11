@@ -249,7 +249,7 @@ img {
 
 .page-header__bookmark-link {
   position: relative;
-  padding: 10px 30px 9px 43px;
+  padding: 10px 30px 9px 42px;
 }
 
 .page-header__bookmark-link--red {
@@ -999,8 +999,8 @@ img {
   color: var(--black);
   padding-top: 20px;
   padding-bottom: 8px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 27px;
+  padding-left: 28px;
 }
 
 .card__item-subtitle {
@@ -1244,6 +1244,10 @@ img {
   margin: auto;
 }
 
+.manufacturer__img--padding {
+  padding-bottom: 13px;
+}
+
 /* service */
 
 .service {
@@ -1423,6 +1427,7 @@ img {
 
 .service-item__button {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1497,6 +1502,7 @@ img {
 
 .feature__button {
   display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1854,6 +1860,7 @@ img {
   border-radius: 3px;
   font-size: 13px;
   line-height: 18px;
+  font-weight: normal;
   color: var(--black);
   text-transform: uppercase;
   background-color: var(--filter);
@@ -2163,6 +2170,7 @@ img {
 .catalog-nav__title {
   font-size: 13px;
   line-height: 18px;
+  font-weight: normal;
   color: var(--black);
   text-transform: uppercase;
   background-color: var(--filter);
@@ -2310,16 +2318,6 @@ img {
   text-transform: uppercase;
   text-decoration: line-through;
   color: var(--decor-grey);
-}
-
-.catalog__button {
-  display: inline-block;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--wight);
-  background-color: var(--basic-red);
 }
 
 .pagination__list {
