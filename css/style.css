@@ -765,6 +765,7 @@ img {
   position: relative;
   width: 620px;
   height: 266px;
+  background-color: var(--basic-greylight);
 }
 
 .intro-slider__item--active {
